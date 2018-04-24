@@ -1,0 +1,16 @@
+<import src="../../template/posts/posts.wxml" />
+<view class="container">
+    <swiper catchtap="swiper2detail" class="swiper-wrapper" indicator-dots="true" autoplay="true" interval="2000" circular="true">
+        <swiper-item>
+            <image src="/images/swiper_01.jpg" data-postId="0"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/swiper_02.jpg" data-postId="1"></image>
+        </swiper-item>
+    </swiper>
+    <block wx:for="{{newsData.newsRes}}" wx:for-item="item" wx:key="index">
+        <view catchtap="toDetail" data-postId="{{item.postId}}">
+            <template is="newsWrapper" data="{{...item}}" />
+        </view>
+    </block>
+</view>

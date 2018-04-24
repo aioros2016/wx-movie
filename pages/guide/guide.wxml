@@ -1,0 +1,8 @@
+<!--pages/guide/guide.wxml.wxml-->
+<view class='container'>
+  <image class='user-avatar' src='/images/avatar.jpg'></image>
+  <text class='user-name'>Hello，Aioros</text>
+  <view class='enter-button'>
+    <text class="enter" bindtap="enter">开启小程序</text>
+  </view>
+</view>

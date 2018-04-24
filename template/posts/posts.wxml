@@ -1,0 +1,19 @@
+<template name="newsWrapper">
+    <view class="news-wrapper">
+        <view class="author-data">
+            <image src="{{avatar}}"></image>
+            <text class="date">{{date}}</text>
+        </view>
+        <text class="title">{{title}}</text>
+        <image class="preview" src="{{preview}}"></image>
+        <text class="content">{{content}}</text>
+        <view class="icon-box">
+            <text class="iconfont icon-star01">
+                <text class="number">{{star}}</text>
+            </text>
+            <text class="iconfont icon-huifu">
+                <text class="number">{{commit}}</text>
+            </text>
+        </view>
+    </view>
+</template>

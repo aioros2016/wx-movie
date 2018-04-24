@@ -1,0 +1,14 @@
+@import "../movie/movie-template.wxss";
+
+/*scroll-view*/
+.single-view-container{
+    display: inline-block;
+    margin-bottom: 40rpx;
+    width: 33.3%;
+}
+
+.grid-container{
+    height: 1300rpx;
+    margin: 40rpx auto;
+    font-size: 0;
+}

@@ -1,0 +1,19 @@
+<view class="container">
+    <image class="head-img" src="{{newsDetail.preview}}" />
+    <image class="bg-icon" catchtap="onMusicTap" src="{{isPlaying ? '/images/music/music-stop.png' : '/images/music/music-start.png'}}" />
+    <view class="author-data">
+        <image class="avatar" src="{{newsDetail.avatar}}" />
+        <text class="name">{{newsDetail.author}}</text>
+        <text class="const-text">发表于</text>
+        <text class="before-time">{{newsDetail.dataTime}}</text>
+    </view>
+    <text class="title">{{newsDetail.title}}</text>
+    <view class="tool">
+        <view class="icon-wrapper">
+            <text class="iconfont icon-icon" catchtap="onColletionTap"></text>
+            <text class="iconfont icon-fenxiang"></text>
+        </view>
+        <view class="line"></view>
+    </view>
+    <text class="content">{{newsDetail.detail}}</text>
+</view>
